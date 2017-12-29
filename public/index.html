@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GuiShi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h3>Poem Tracker</h3>
+        <span id="foundpoem">Search Results</span>
+        <ul id="displaypoem"></ul>
+                <div>
+                    <form name="poem">
+                        <h3>Search Poem</h3>
+                        <input id="onegs" name="onegs" type="text">
+                        <button type="button" onclick="findPoem()">search</button>
+                        <h3>Add New Poem</h3>
+                        <input id="poem" name="poem" type="text">
+                        <input id="author" name="author" type="text">
+                        <button type="button" onclick="addPoem()">submit</button>
+                    </form>
+                </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+   
+
+
+</html>
