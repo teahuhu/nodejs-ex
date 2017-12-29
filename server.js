@@ -30,3 +30,7 @@ app.post("/api/poems", (req, res) => {
 		.then((data) => res.json({ result: 'success' }))
 		.catch((err) => res.json({ result: 'fail' }))
 })
+
+app.listen('3000')
+
+module.exports = app
