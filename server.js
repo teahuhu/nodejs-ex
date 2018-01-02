@@ -7,7 +7,7 @@ var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 
 var POEM_COLLECTION = "gushi";
-var POEM_FILE = "./poems.json";
+var POEM_FILE = "./poems.html";
 
 var app = express();
 var path = require('path');
