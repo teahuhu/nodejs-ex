@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>GuiShi</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section>
         <h3>Poem Tracker</h3>
@@ -18,13 +20,16 @@
                         <input id="onegs" name="onegs" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
                         <button id="btnSearch"type="button" onclick="findPoem()">Search</button>
                         <h3>Add New Poem</h3>
-                        <input id="poem" name="poem" type="text">
+                        <input id="poem" name="poem" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnAdd').click()">
                         <input id="author" name="author" type="text" onkeydown="if (event.keyCode == 13) document.getElementById('btnAdd').click()">
                         <button id="btnAdd" type="button" onclick="addPoem()">Add</button>
                     </form>
                 </div>
     </section>
 </body>
+
 <script src="script.js"></script>
    
+
+
 </html>
