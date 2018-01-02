@@ -16,22 +16,22 @@ app.use('/', express.static(path.join(__dirname, 'public')))
 var db;
 
 // Connect to the database before starting the application server.
-mongodb.MongoClient.connect('mongo "mongodb://teahuhu-shard-00-00-pkqcy.mongodb.net:27017,teahuhu-shard-00-01-pkqcy.mongodb.net:27017,teahuhu-shard-00-02-pkqcy.mongodb.net:27017/test?replicaSet=teahuhu-shard-0" --ssl --authenticationDatabase admin --username teahuhu --password chengyu88' || 'mongodb://localhost:27017/messages', function (err, database) {
-  if (err) {
-    console.log(err);
-    process.exit(1);
-  }
+//mongodb.MongoClient.connect('mongo "mongodb://teahuhu-shard-00-00-pkqcy.mongodb.net:27017,teahuhu-shard-00-01-pkqcy.mongodb.net:27017,teahuhu-shard-00-02-pkqcy.mongodb.net:27017/test?replicaSet=teahuhu-shard-0" --ssl --authenticationDatabase admin --username teahuhu --password chengyu88' || 'mongodb://localhost:27017/messages', function (err, database) {
+//  if (err) {
+//    console.log(err);
+//    process.exit(1);
+//  }
 
   // Save database object from the callback for reuse.
-  db = database;
-  console.log("Database connection ready");
+//  db = database;
+//  console.log("Database connection ready");
 
   // Initialize the app.
   var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
     console.log("App now running on port", port);
   });
-});
+//});
 
 // CONTACTS API ROUTES BELOW
 
